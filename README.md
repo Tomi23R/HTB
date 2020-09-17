@@ -1,2 +1,2 @@
 # HTB
-Repository container of machines and challenges from hackthebox
+Container repository of machines and challenges from hackthebox
