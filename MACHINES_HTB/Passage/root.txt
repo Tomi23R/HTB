@@ -1,0 +1,2 @@
+/index.php (Status: 200)
+/news.php (Status: 200)

@@ -1,0 +1,7 @@
+/index.php (Status: 200)
+/img (Status: 301)
+/mail (Status: 301)
+/css (Status: 301)
+/portfolio.php (Status: 200)
+/js (Status: 301)
+/vendor (Status: 301)

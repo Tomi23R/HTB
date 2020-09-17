@@ -1,0 +1,9 @@
+Por probar:
+	Para bypassear statements posiblemente pueda usar selselectect, tengo que probar.
+
+Funciona:
+
+
+aNo funciona:
+	Null byte antes de expresion no funciona.
+

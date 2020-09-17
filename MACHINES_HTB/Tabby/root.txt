@@ -1,0 +1,4 @@
+/news.php (Status: 200)
+/index.php (Status: 200)
+/files (Status: 301)
+/assets (Status: 301)

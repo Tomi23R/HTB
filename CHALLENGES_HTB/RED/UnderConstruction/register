@@ -1,0 +1,14 @@
+POST /auth HTTP/1.1
+Host: docker.hackthebox.eu:30741
+User-Agent: Mozilla/5.0 (X11; Linux x86_64; rv:68.0) Gecko/20100101 Firefox/68.0
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+Accept-Language: en-US,en;q=0.5
+Accept-Encoding: gzip, deflate
+Referer: http://docker.hackthebox.eu:30741/auth?error=Invalid%20username%20or%20password
+Content-Type: application/x-www-form-urlencoded
+Content-Length: 39
+Connection: close
+Cookie: ajs_anonymous_id=%221a1be9cf-9556-4feb-a9a8-2025ef756060%22; _ga=GA1.2.1962865171.1598447970; ajs_user_id=%22536ffd04510f2ae710e2a1d74d0b8f84%22; _gid=GA1.2.307177890.1598608398; __auc=c47dd0571743a193c246f674c9d; PHPSESSID=05qfanahe564aftmrpbik7akrm; php-console-server=5
+Upgrade-Insecure-Requests: 1
+
+username=c&password=d&register=Register

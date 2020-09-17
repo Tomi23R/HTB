@@ -1,0 +1,4 @@
+# Nmap 7.80 scan initiated Thu Sep 10 16:48:41 2020 as: nmap -sC -sV -oA nmap/Omni 10.10.10.204
+Host: 10.10.10.204 ()	Status: Up
+Host: 10.10.10.204 ()	Ports: 135/open/tcp//msrpc//Microsoft Windows RPC/, 8080/open/tcp//upnp//Microsoft IIS httpd/	Ignored State: filtered (998)
+# Nmap done at Thu Sep 10 16:49:03 2020 -- 1 IP address (1 host up) scanned in 22.11 seconds

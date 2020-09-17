@@ -1,0 +1,5 @@
+/uploads (Status: 301)
+/pages (Status: 301)
+/databases (Status: 301)
+/tmp (Status: 301)
+/workspaces (Status: 301)

