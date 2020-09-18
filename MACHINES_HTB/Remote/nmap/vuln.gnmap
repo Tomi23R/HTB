@@ -1,0 +1,4 @@
+# Nmap 7.80 scan initiated Wed Sep 16 08:46:58 2020 as: nmap --script vuln -oA nmap/vuln 10.10.10.180
+Host: 10.10.10.180 ()	Status: Up
+Host: 10.10.10.180 ()	Ports: 21/open/tcp//ftp///, 80/open/tcp//http///, 111/open/tcp//rpcbind///, 135/open/tcp//msrpc///, 139/open/tcp//netbios-ssn///, 445/open/tcp//microsoft-ds///, 2049/open/tcp//nfs///	Ignored State: closed (993)
+# Nmap done at Wed Sep 16 08:55:05 2020 -- 1 IP address (1 host up) scanned in 487.26 seconds

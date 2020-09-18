@@ -1,0 +1,28 @@
+# Nmap 7.80 scan initiated Wed Sep 16 08:59:17 2020 as: nmap --script nfs-ls -oA nfs/nfs_list 10.10.10.180
+Nmap scan report for remote.htb (10.10.10.180)
+Host is up (0.14s latency).
+Not shown: 993 closed ports
+PORT     STATE SERVICE
+21/tcp   open  ftp
+80/tcp   open  http
+111/tcp  open  rpcbind
+| nfs-ls: Volume /site_backups
+|   access: Read Lookup NoModify NoExtend NoDelete NoExecute
+| PERMISSION  UID         GID         SIZE   TIME                 FILENAME
+| rwx------   4294967294  4294967294  4096   2020-02-23T18:35:48  .
+| ??????????  ?           ?           ?      ?                    ..
+| rwx------   4294967294  4294967294  64     2020-02-20T17:16:39  App_Browsers
+| rwx------   4294967294  4294967294  4096   2020-02-20T17:17:19  App_Data
+| rwx------   4294967294  4294967294  4096   2020-02-20T17:16:40  App_Plugins
+| rwx------   4294967294  4294967294  8192   2020-02-20T17:16:42  Config
+| rwx------   4294967294  4294967294  64     2020-02-20T17:16:40  aspnet_client
+| rwx------   4294967294  4294967294  49152  2020-02-20T17:16:42  bin
+| rwx------   4294967294  4294967294  64     2020-02-20T17:16:42  css
+| rwx------   4294967294  4294967294  152    2018-11-01T17:06:44  default.aspx
+|_
+135/tcp  open  msrpc
+139/tcp  open  netbios-ssn
+445/tcp  open  microsoft-ds
+2049/tcp open  nfs
+
+# Nmap done at Wed Sep 16 08:59:25 2020 -- 1 IP address (1 host up) scanned in 7.81 seconds

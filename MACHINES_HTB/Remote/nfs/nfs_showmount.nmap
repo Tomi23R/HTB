@@ -1,0 +1,16 @@
+# Nmap 7.80 scan initiated Wed Sep 16 08:59:47 2020 as: nmap --script nfs-showmount -oA nfs/nfs_showmount 10.10.10.180
+Nmap scan report for remote.htb (10.10.10.180)
+Host is up (0.14s latency).
+Not shown: 993 closed ports
+PORT     STATE SERVICE
+21/tcp   open  ftp
+80/tcp   open  http
+111/tcp  open  rpcbind
+| nfs-showmount: 
+|_  /site_backups 
+135/tcp  open  msrpc
+139/tcp  open  netbios-ssn
+445/tcp  open  microsoft-ds
+2049/tcp open  nfs
+
+# Nmap done at Wed Sep 16 08:59:52 2020 -- 1 IP address (1 host up) scanned in 5.11 seconds

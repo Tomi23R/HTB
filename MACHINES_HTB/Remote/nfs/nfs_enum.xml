@@ -1,0 +1,430 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE nmaprun>
+<?xml-stylesheet href="file:///usr/bin/../share/nmap/nmap.xsl" type="text/xsl"?>
+<!-- Nmap 7.80 scan initiated Wed Sep 16 08:58:37 2020 as: nmap -sSUC -p111 -oA nfs/nfs_enum 10.10.10.180 -->
+<nmaprun scanner="nmap" args="nmap -sSUC -p111 -oA nfs/nfs_enum 10.10.10.180" start="1600264717" startstr="Wed Sep 16 08:58:37 2020" version="7.80" xmloutputversion="1.04">
+<scaninfo type="syn" protocol="tcp" numservices="1" services="111"/>
+<scaninfo type="udp" protocol="udp" numservices="1" services="111"/>
+<verbose level="0"/>
+<debugging level="0"/>
+<host starttime="1600264718" endtime="1600264735"><status state="up" reason="reset" reason_ttl="127"/>
+<address addr="10.10.10.180" addrtype="ipv4"/>
+<hostnames>
+<hostname name="remote.htb" type="PTR"/>
+</hostnames>
+<ports><port protocol="tcp" portid="111"><state state="open" reason="syn-ack" reason_ttl="127"/><service name="rpcbind" version="2-4" extrainfo="RPC #100000" method="probed" conf="10"/><script id="rpcinfo" output="&#xa;  program version    port/proto  service&#xa;  100000  2,3,4        111/tcp   rpcbind&#xa;  100000  2,3,4        111/tcp6  rpcbind&#xa;  100000  2,3,4        111/udp   rpcbind&#xa;  100000  2,3,4        111/udp6  rpcbind&#xa;  100003  2,3         2049/udp   nfs&#xa;  100003  2,3         2049/udp6  nfs&#xa;  100003  2,3,4       2049/tcp   nfs&#xa;  100003  2,3,4       2049/tcp6  nfs&#xa;  100005  1,2,3       2049/tcp   mountd&#xa;  100005  1,2,3       2049/tcp6  mountd&#xa;  100005  1,2,3       2049/udp   mountd&#xa;  100005  1,2,3       2049/udp6  mountd&#xa;  100021  1,2,3,4     2049/tcp   nlockmgr&#xa;  100021  1,2,3,4     2049/tcp6  nlockmgr&#xa;  100021  1,2,3,4     2049/udp   nlockmgr&#xa;  100021  1,2,3,4     2049/udp6  nlockmgr&#xa;  100024  1           2049/tcp   status&#xa;  100024  1           2049/tcp6  status&#xa;  100024  1           2049/udp   status&#xa;  100024  1           2049/udp6  status&#xa;"><table key="100000">
+<table key="udp6">
+<elem key="owner">superuser</elem>
+<elem key="addr">::</elem>
+<table key="version">
+<elem>2</elem>
+<elem>3</elem>
+<elem>4</elem>
+</table>
+<elem key="port">111</elem>
+</table>
+<table key="tcp6">
+<elem key="owner">superuser</elem>
+<elem key="addr">::</elem>
+<table key="version">
+<elem>2</elem>
+<elem>3</elem>
+<elem>4</elem>
+</table>
+<elem key="port">111</elem>
+</table>
+<table key="tcp">
+<elem key="owner">superuser</elem>
+<elem key="addr">0.0.0.0</elem>
+<table key="version">
+<elem>2</elem>
+<elem>3</elem>
+<elem>4</elem>
+</table>
+<elem key="port">111</elem>
+</table>
+<table key="udp">
+<elem key="owner">superuser</elem>
+<elem key="addr">0.0.0.0</elem>
+<table key="version">
+<elem>2</elem>
+<elem>3</elem>
+<elem>4</elem>
+</table>
+<elem key="port">111</elem>
+</table>
+</table>
+<table key="100024">
+<table key="tcp6">
+<elem key="owner">superuser</elem>
+<elem key="addr">::</elem>
+<table key="version">
+<elem>1</elem>
+</table>
+<elem key="port">2049</elem>
+</table>
+<table key="udp6">
+<elem key="owner">superuser</elem>
+<elem key="addr">::</elem>
+<table key="version">
+<elem>1</elem>
+</table>
+<elem key="port">2049</elem>
+</table>
+<table key="tcp">
+<elem key="owner">superuser</elem>
+<elem key="addr">0.0.0.0</elem>
+<table key="version">
+<elem>1</elem>
+</table>
+<elem key="port">2049</elem>
+</table>
+<table key="udp">
+<elem key="owner">superuser</elem>
+<elem key="addr">0.0.0.0</elem>
+<table key="version">
+<elem>1</elem>
+</table>
+<elem key="port">2049</elem>
+</table>
+</table>
+<table key="100003">
+<table key="tcp6">
+<elem key="owner">superuser</elem>
+<elem key="addr">::</elem>
+<table key="version">
+<elem>2</elem>
+<elem>3</elem>
+<elem>4</elem>
+</table>
+<elem key="port">2049</elem>
+</table>
+<table key="udp6">
+<elem key="owner">superuser</elem>
+<elem key="addr">::</elem>
+<table key="version">
+<elem>2</elem>
+<elem>3</elem>
+</table>
+<elem key="port">2049</elem>
+</table>
+<table key="tcp">
+<elem key="owner">superuser</elem>
+<elem key="addr">0.0.0.0</elem>
+<table key="version">
+<elem>2</elem>
+<elem>3</elem>
+<elem>4</elem>
+</table>
+<elem key="port">2049</elem>
+</table>
+<table key="udp">
+<elem key="owner">superuser</elem>
+<elem key="addr">0.0.0.0</elem>
+<table key="version">
+<elem>2</elem>
+<elem>3</elem>
+</table>
+<elem key="port">2049</elem>
+</table>
+</table>
+<table key="100005">
+<table key="tcp6">
+<elem key="owner">superuser</elem>
+<elem key="addr">::</elem>
+<table key="version">
+<elem>1</elem>
+<elem>2</elem>
+<elem>3</elem>
+</table>
+<elem key="port">2049</elem>
+</table>
+<table key="udp6">
+<elem key="owner">superuser</elem>
+<elem key="addr">::</elem>
+<table key="version">
+<elem>1</elem>
+<elem>2</elem>
+<elem>3</elem>
+</table>
+<elem key="port">2049</elem>
+</table>
+<table key="tcp">
+<elem key="owner">superuser</elem>
+<elem key="addr">0.0.0.0</elem>
+<table key="version">
+<elem>1</elem>
+<elem>2</elem>
+<elem>3</elem>
+</table>
+<elem key="port">2049</elem>
+</table>
+<table key="udp">
+<elem key="owner">superuser</elem>
+<elem key="addr">0.0.0.0</elem>
+<table key="version">
+<elem>1</elem>
+<elem>2</elem>
+<elem>3</elem>
+</table>
+<elem key="port">2049</elem>
+</table>
+</table>
+<table key="100021">
+<table key="tcp6">
+<elem key="owner">superuser</elem>
+<elem key="addr">::</elem>
+<table key="version">
+<elem>1</elem>
+<elem>2</elem>
+<elem>3</elem>
+<elem>4</elem>
+</table>
+<elem key="port">2049</elem>
+</table>
+<table key="udp6">
+<elem key="owner">superuser</elem>
+<elem key="addr">::</elem>
+<table key="version">
+<elem>1</elem>
+<elem>2</elem>
+<elem>3</elem>
+<elem>4</elem>
+</table>
+<elem key="port">2049</elem>
+</table>
+<table key="tcp">
+<elem key="owner">superuser</elem>
+<elem key="addr">0.0.0.0</elem>
+<table key="version">
+<elem>1</elem>
+<elem>2</elem>
+<elem>3</elem>
+<elem>4</elem>
+</table>
+<elem key="port">2049</elem>
+</table>
+<table key="udp">
+<elem key="owner">superuser</elem>
+<elem key="addr">0.0.0.0</elem>
+<table key="version">
+<elem>1</elem>
+<elem>2</elem>
+<elem>3</elem>
+<elem>4</elem>
+</table>
+<elem key="port">2049</elem>
+</table>
+</table>
+</script></port>
+<port protocol="udp" portid="111"><state state="open|filtered" reason="no-response" reason_ttl="0"/><service name="rpcbind" version="2-4" extrainfo="RPC #100000" method="probed" conf="10"/><script id="rpcinfo" output="&#xa;  program version    port/proto  service&#xa;  100000  2,3,4        111/tcp   rpcbind&#xa;  100000  2,3,4        111/tcp6  rpcbind&#xa;  100000  2,3,4        111/udp   rpcbind&#xa;  100000  2,3,4        111/udp6  rpcbind&#xa;  100003  2,3         2049/udp   nfs&#xa;  100003  2,3         2049/udp6  nfs&#xa;  100003  2,3,4       2049/tcp   nfs&#xa;  100003  2,3,4       2049/tcp6  nfs&#xa;  100005  1,2,3       2049/tcp   mountd&#xa;  100005  1,2,3       2049/tcp6  mountd&#xa;  100005  1,2,3       2049/udp   mountd&#xa;  100005  1,2,3       2049/udp6  mountd&#xa;  100021  1,2,3,4     2049/tcp   nlockmgr&#xa;  100021  1,2,3,4     2049/tcp6  nlockmgr&#xa;  100021  1,2,3,4     2049/udp   nlockmgr&#xa;  100021  1,2,3,4     2049/udp6  nlockmgr&#xa;  100024  1           2049/tcp   status&#xa;  100024  1           2049/tcp6  status&#xa;  100024  1           2049/udp   status&#xa;  100024  1           2049/udp6  status&#xa;"><table key="100000">
+<table key="udp6">
+<elem key="owner">superuser</elem>
+<elem key="addr">::</elem>
+<table key="version">
+<elem>2</elem>
+<elem>3</elem>
+<elem>4</elem>
+</table>
+<elem key="port">111</elem>
+</table>
+<table key="tcp6">
+<elem key="owner">superuser</elem>
+<elem key="addr">::</elem>
+<table key="version">
+<elem>2</elem>
+<elem>3</elem>
+<elem>4</elem>
+</table>
+<elem key="port">111</elem>
+</table>
+<table key="tcp">
+<elem key="owner">superuser</elem>
+<elem key="addr">0.0.0.0</elem>
+<table key="version">
+<elem>2</elem>
+<elem>3</elem>
+<elem>4</elem>
+</table>
+<elem key="port">111</elem>
+</table>
+<table key="udp">
+<elem key="owner">superuser</elem>
+<elem key="addr">0.0.0.0</elem>
+<table key="version">
+<elem>2</elem>
+<elem>3</elem>
+<elem>4</elem>
+</table>
+<elem key="port">111</elem>
+</table>
+</table>
+<table key="100024">
+<table key="tcp6">
+<elem key="owner">superuser</elem>
+<elem key="addr">::</elem>
+<table key="version">
+<elem>1</elem>
+</table>
+<elem key="port">2049</elem>
+</table>
+<table key="udp6">
+<elem key="owner">superuser</elem>
+<elem key="addr">::</elem>
+<table key="version">
+<elem>1</elem>
+</table>
+<elem key="port">2049</elem>
+</table>
+<table key="tcp">
+<elem key="owner">superuser</elem>
+<elem key="addr">0.0.0.0</elem>
+<table key="version">
+<elem>1</elem>
+</table>
+<elem key="port">2049</elem>
+</table>
+<table key="udp">
+<elem key="owner">superuser</elem>
+<elem key="addr">0.0.0.0</elem>
+<table key="version">
+<elem>1</elem>
+</table>
+<elem key="port">2049</elem>
+</table>
+</table>
+<table key="100003">
+<table key="tcp6">
+<elem key="owner">superuser</elem>
+<elem key="addr">::</elem>
+<table key="version">
+<elem>2</elem>
+<elem>3</elem>
+<elem>4</elem>
+</table>
+<elem key="port">2049</elem>
+</table>
+<table key="udp6">
+<elem key="owner">superuser</elem>
+<elem key="addr">::</elem>
+<table key="version">
+<elem>2</elem>
+<elem>3</elem>
+</table>
+<elem key="port">2049</elem>
+</table>
+<table key="tcp">
+<elem key="owner">superuser</elem>
+<elem key="addr">0.0.0.0</elem>
+<table key="version">
+<elem>2</elem>
+<elem>3</elem>
+<elem>4</elem>
+</table>
+<elem key="port">2049</elem>
+</table>
+<table key="udp">
+<elem key="owner">superuser</elem>
+<elem key="addr">0.0.0.0</elem>
+<table key="version">
+<elem>2</elem>
+<elem>3</elem>
+</table>
+<elem key="port">2049</elem>
+</table>
+</table>
+<table key="100005">
+<table key="tcp6">
+<elem key="owner">superuser</elem>
+<elem key="addr">::</elem>
+<table key="version">
+<elem>1</elem>
+<elem>2</elem>
+<elem>3</elem>
+</table>
+<elem key="port">2049</elem>
+</table>
+<table key="udp6">
+<elem key="owner">superuser</elem>
+<elem key="addr">::</elem>
+<table key="version">
+<elem>1</elem>
+<elem>2</elem>
+<elem>3</elem>
+</table>
+<elem key="port">2049</elem>
+</table>
+<table key="tcp">
+<elem key="owner">superuser</elem>
+<elem key="addr">0.0.0.0</elem>
+<table key="version">
+<elem>1</elem>
+<elem>2</elem>
+<elem>3</elem>
+</table>
+<elem key="port">2049</elem>
+</table>
+<table key="udp">
+<elem key="owner">superuser</elem>
+<elem key="addr">0.0.0.0</elem>
+<table key="version">
+<elem>1</elem>
+<elem>2</elem>
+<elem>3</elem>
+</table>
+<elem key="port">2049</elem>
+</table>
+</table>
+<table key="100021">
+<table key="tcp6">
+<elem key="owner">superuser</elem>
+<elem key="addr">::</elem>
+<table key="version">
+<elem>1</elem>
+<elem>2</elem>
+<elem>3</elem>
+<elem>4</elem>
+</table>
+<elem key="port">2049</elem>
+</table>
+<table key="udp6">
+<elem key="owner">superuser</elem>
+<elem key="addr">::</elem>
+<table key="version">
+<elem>1</elem>
+<elem>2</elem>
+<elem>3</elem>
+<elem>4</elem>
+</table>
+<elem key="port">2049</elem>
+</table>
+<table key="tcp">
+<elem key="owner">superuser</elem>
+<elem key="addr">0.0.0.0</elem>
+<table key="version">
+<elem>1</elem>
+<elem>2</elem>
+<elem>3</elem>
+<elem>4</elem>
+</table>
+<elem key="port">2049</elem>
+</table>
+<table key="udp">
+<elem key="owner">superuser</elem>
+<elem key="addr">0.0.0.0</elem>
+<table key="version">
+<elem>1</elem>
+<elem>2</elem>
+<elem>3</elem>
+<elem>4</elem>
+</table>
+<elem key="port">2049</elem>
+</table>
+</table>
+</script></port>
+</ports>
+<times srtt="141155" rttvar="107667" to="571823"/>
+</host>
+<runstats><finished time="1600264735" timestr="Wed Sep 16 08:58:55 2020" elapsed="17.56" summary="Nmap done at Wed Sep 16 08:58:55 2020; 1 IP address (1 host up) scanned in 17.56 seconds" exit="success"/><hosts up="1" down="0" total="1"/>
+</runstats>
+</nmaprun>

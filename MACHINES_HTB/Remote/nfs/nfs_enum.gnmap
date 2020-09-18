@@ -1,0 +1,4 @@
+# Nmap 7.80 scan initiated Wed Sep 16 08:58:37 2020 as: nmap -sSUC -p111 -oA nfs/nfs_enum 10.10.10.180
+Host: 10.10.10.180 (remote.htb)	Status: Up
+Host: 10.10.10.180 (remote.htb)	Ports: 111/open/tcp//rpcbind//2-4 (RPC #100000)/, 111/open|filtered/udp//rpcbind//2-4 (RPC #100000)/
+# Nmap done at Wed Sep 16 08:58:55 2020 -- 1 IP address (1 host up) scanned in 17.56 seconds
