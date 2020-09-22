@@ -1,0 +1,11 @@
+Target: http://10.10.10.188/FUZZ
+Total requests: 949
+==================================================================
+ID    Response   Lines      Word         Chars          Request    
+==================================================================
+00448:  C=301      9 L	      28 W	    317 Ch	  "javascript"
+
+Total time: 0
+Processed Requests: 949
+Filtered Requests: 948
+Requests/sec.: 0
