@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE nmaprun>
+<?xml-stylesheet href="file:///usr/bin/../share/nmap/nmap.xsl" type="text/xsl"?>
+<!-- Nmap 7.80 scan initiated Tue Sep 22 15:24:29 2020 as: nmap -A -p- -Pn -oA nmap/Omni_full 10.10.10.204 -->
+<nmaprun scanner="nmap" args="nmap -A -p- -Pn -oA nmap/Omni_full 10.10.10.204" start="1600806269" startstr="Tue Sep 22 15:24:29 2020" version="7.80" xmloutputversion="1.04">
+<scaninfo type="connect" protocol="tcp" numservices="65535" services="1-65535"/>
+<verbose level="0"/>
+<debugging level="0"/>
+<host starttime="1600806270" endtime="1600806614"><status state="up" reason="user-set" reason_ttl="0"/>
+<address addr="10.10.10.204" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+<ports><extraports state="filtered" count="65530">
+<extrareasons reason="no-responses" count="65530"/>
+</extraports>
+<port protocol="tcp" portid="135"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="msrpc" product="Microsoft Windows RPC" ostype="Windows" method="probed" conf="10"><cpe>cpe:/o:microsoft:windows</cpe></service></port>
+<port protocol="tcp" portid="8080"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="upnp" product="Microsoft IIS httpd" method="probed" conf="10"><cpe>cpe:/a:microsoft:iis</cpe></service><script id="http-auth" output="&#xa;HTTP/1.1 401 Unauthorized&#xd;&#xa;  Basic realm=Windows Device Portal&#xa;"><table>
+<elem key="scheme">Basic</elem>
+<table key="params">
+<elem key="realm">Windows Device Portal</elem>
+</table>
+</table>
+</script><script id="http-server-header" output="Microsoft-HTTPAPI/2.0"><elem>Microsoft-HTTPAPI/2.0</elem>
+</script><script id="http-title" output="Site doesn&apos;t have a title."></script></port>
+<port protocol="tcp" portid="29817"><state state="open" reason="syn-ack" reason_ttl="0"/></port>
+<port protocol="tcp" portid="29819"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="arcserve" product="ARCserve Discovery" hostname="PING" method="probed" conf="10"><cpe>cpe:/a:ca:arcserve_client_agent</cpe></service></port>
+<port protocol="tcp" portid="29820"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="unknown" servicefp="SF-Port29820-TCP:V=7.80%I=7%D=9/22%Time=5F6A5E90%P=x86_64-pc-linux-gnu%r(NULL,10,&quot;\*LY\xa5\xfb`\x04G\xa9m\x1c\xc9}\xc8O\x12&quot;)%r(GenericLines,10,&quot;\*LY\xa5\xfb`\x04G\xa9m\x1c\xc9}\xc8O\x12&quot;)%r(Help,10,&quot;\*LY\xa5\xfb`\x04G\xa9m\x1c\xc9}\xc8O\x12&quot;)%r(JavaRMI,10,&quot;\*LY\xa5\xfb`\x04G\xa9m\x1c\xc9}\xc8O\x12&quot;);" method="table" conf="3"/></port>
+</ports>
+<times srtt="109636" rttvar="942" to="113404"/>
+</host>
+<runstats><finished time="1600806614" timestr="Tue Sep 22 15:30:14 2020" elapsed="345.13" summary="Nmap done at Tue Sep 22 15:30:14 2020; 1 IP address (1 host up) scanned in 345.13 seconds" exit="success"/><hosts up="1" down="0" total="1"/>
+</runstats>
+</nmaprun>
