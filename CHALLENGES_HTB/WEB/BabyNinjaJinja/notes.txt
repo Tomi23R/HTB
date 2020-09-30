@@ -1,0 +1,7 @@
+INJECTABLE
+SQL Query: INSERT INTO ninjas (name) VALUES ("%s") %name
+DATABASE: SQlite3
+
+/debug: Code
+
+Try ssti?
