@@ -1,0 +1,14 @@
+POST /login?next=%2Fhome HTTP/1.1
+Host: doctors.htb
+User-Agent: Mozilla/5.0 (X11; Linux x86_64; rv:68.0) Gecko/20100101 Firefox/68.0
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+Accept-Language: en-US,en;q=0.5
+Accept-Encoding: gzip, deflate
+Referer: http://doctors.htb/login?next=%2Fhome
+Content-Type: application/x-www-form-urlencoded
+Content-Length: 40
+Connection: close
+Cookie: session=eyJfZnJlc2giOmZhbHNlLCJjc3JmX3Rva2VuIjoiMjdmYWVmNTBlNjkxYTJlZmZiZjYwMGJlZWY5NDQ5YmNkNjIzOTgxMSJ9.X4WS3A.U5KSZJe9q6ICdNA2MsQsDnSuBRA
+Upgrade-Insecure-Requests: 1
+
+email=a%40a.com&password=aa&submit=Login

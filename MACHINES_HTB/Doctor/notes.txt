@@ -1,0 +1,6 @@
+Can createwith 20 minutes of use.
+What can i do?
+	- Bruteforce admin account
+	- Decode cookie with jwt
+	- Gobuster web
+	- CSRF?

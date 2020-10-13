@@ -4,4 +4,4 @@ DATABASE: SQlite3
 
 /debug: Code
 
-Try ssti?
+SSTI, need session 
